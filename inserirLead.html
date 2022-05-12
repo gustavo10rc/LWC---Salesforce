@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Inserir Novo lead">
+        <div class="slds-m-around_medium">
+            <lightning-input label="Primeiro nome" name="firstname" onchange = {handleOnChange}></lightning-input>
+            <lightning-input label="sobrenome" name="lastname" onchange = {handleOnChange}></lightning-input>
+            <lightning-input label="email" name="email" onchange = {handleOnChange}></lightning-input>
+            <!-- Brand variant: Identifies the primary action in a group of buttons -->
+            <br>
+            <lightning-button variant="brand" label="Salvar" class="slds-m-left_x-small" title="Brand action"></lightning-button> 
+        </div>
+    </lightning-card>
+</template>
