@@ -1,11 +1,16 @@
 <template>
     <lightning-card title="Inserir Novo lead">
         <div class="slds-m-around_medium">
+            <!--Label é o nome do campo que aparece para o usuario 
+                Name é o nome que é usado pelo codigo para referenciar
+                onchange está fazendo a referencia a função handleOnChange no inserirLead.js
+            -->
             <lightning-input label="Primeiro nome" name="firstname" onchange = {handleOnChange}></lightning-input>
             <lightning-input label="sobrenome" name="lastname" onchange = {handleOnChange}></lightning-input>
             <lightning-input label="email" name="email" onchange = {handleOnChange}></lightning-input>
             <!-- Brand variant: Identifies the primary action in a group of buttons -->
             <br>
+            <!--criação do botão-->
             <lightning-button variant="brand" label="Salvar" class="slds-m-left_x-small" title="Brand action"></lightning-button> 
         </div>
     </lightning-card>
